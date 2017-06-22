@@ -41,7 +41,7 @@ module.exports = {
 	output: {
 		// 指向资源目录 
 		path: __dirname + '/dist',
-		// 对象的条件下，filename不能是一个文件，报错。multi-entry can't fit to simple output. 1+ 版本不报错，但会覆盖
+		// entry是对象的条件下，filename不能是一个文件，报错。multi-entry can't fit to simple output. 1+ 版本不报错，但会覆盖
 		// filename: 'bundle.js',
 		// [name]--entry-key [hash]--本次打包的hash值-总的 [chunkhash]--每个chunk的hash值--可以理解为文件的版本号-文件内容改变才会变
 		filename: 'js/[name].js',
